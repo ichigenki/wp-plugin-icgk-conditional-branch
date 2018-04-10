@@ -10,7 +10,7 @@ License: GPL2
 */
 
 // $post_id = この ID を持つページが親ページを持つか
-function has_parent($post_id) {
+function has_parent($post_id='') {
 	if( $post_id ) {
 		$post = get_post($post_id);
 		setup_postdata( $post);
@@ -26,7 +26,7 @@ function has_parent($post_id) {
 }
 
 // $post_id = この ID を持つページが子ページを持つか
-function has_child($post_id) {
+function has_child($post_id='') {
 	if( $post_id ) {
 		$post = get_post($post_id);
 		setup_postdata( $post);
